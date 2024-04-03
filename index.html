@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Salah Page d'Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myportfolio.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+ 
+    <!-- Page Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Salah Eddine Maimouni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studies">Études</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Mes Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="header-title">Salut!</h1>
+            <p class="header-subtitle">Je suis Salah Eddine Maimouni</p>
+            <p class="header-subtitle">Étudiant ingénieur en électromécanique</p>
+            <button class="btn btn-primary btn-lg mt-3 btn-visit-works">Visitez mon GitHub</button>
+            <button class="btn btn-primary btn-lg mt-3 btn-visit-linkedin">Visitez mon LinkedIn</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-5 pb-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/imgs/man.png" class="img-fluid rounded-circle about-img"
+                        alt="Étudiant ingénieur en électromécanique">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title mb-3">À propos de moi</h2>
+                    <p class="section-subtitle">Qui suis-je ?</p>
+                    <p>
+                        Étudiant ingénieur à l'ENSAM Casablanca en deuxième année de génie électromécanique.
+                        <br> J'ai également un diplôme de technicien supérieur en électrotechnique obtenu en 2022, et maintenant je recherche un programme de mobilité internationale.
+                    </p>
+                    <button class="btn btn-outline-primary mt-4 btn-download-cv">Télécharger CV</button>
+                </div>
+            </div>
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section bg-light pt-5 pb-5" id="service">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Services</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/electric.jpg"
+                            alt="Conception, simulation, maintenance et construction de systèmes électriques et électroniques automatiques"
+                            class="icon mb-3">
+                        <h6 class="title">Électrique</h6>
+                        <p class="subtitle">Conception, simulation, maintenance et construction de systèmes électriques et électroniques automatiques</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/mechanic.jpg"
+                            alt="Conception, simulation, maintenance et construction de systèmes mécaniques et modélisation 3D"
+                            class="icon mb-3">
+                        <h6 class="title">Mécanique</h6>
+                        <p class="subtitle">Conception, simulation, maintenance et construction de systèmes mécaniques et modélisation 3D</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/embedded.jpg"
+                            alt="Programmation, construction et maintenance de systèmes embarqués utilisant C, C++, Python et l'assembleur"
+                            class="icon mb-3">
+                        <h6 class="title">Systèmes embarqués</h6>
+                        <p class="subtitle">Programmation, construction et maintenance de systèmes embarqués utilisant C, C++, Python et l'assembleur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/dev.jpg"
+                            alt="Interfaces utilisateur graphiques, programmation orientée objet, vision par ordinateur, web front et back-end"
+                            class="icon mb-3">
+                        <h6 class="title">Développement</h6>
+                        <p class="subtitle">Interfaces utilisateur graphiques, programmation orientée objet, vision par ordinateur, web front et back-end</p>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section><!-- end of service section -->
+
+
+    
+
+    <!-- studies section -->
+    <section class="section bg-light pt-5 pb-5" id="studies">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Études</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="study-card text-center">
+                        <img src="assets/imgs/study1.png"
+                            alt="Bac professionnel en maintenance industrielle"
+                            class="study-img1 mb-3">
+                        <h6 class="study-name">Baccalauréat professionnel</h6>
+                        <p class="study-description">Bac professionnel en maintenance industrielle, obtenu en 2020 au lycée Jerada Zeraktouni et OFPPT</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="study-card text-center">
+                        <img src="assets/imgs/study2.jpg"
+                            alt="BTS électrotechnique"
+                            class="study-img2 mb-3">
+                        <h6 class="study-name">BTS électrotechnique</h6>
+                        <p class="study-description">Diplôme de technicien supérieur en électrotechnique, obtenu en 2022 au lycée technique d'Oujda Mehdi Ben Berka </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="study-card text-center">
+                        <img src="assets/imgs/study3.png"
+                            alt="Diplôme d'ingénieur en électromécanique à l'ENSAM Casablanca"
+                            class="study-img3 mb-3">
+                        <h6 class="study-name">ENSAM CASABLANCA</h6>
+                        <p class="study-description">Diplôme d'ingénieur en électromécanique commencé en 2022 à l'ENSAM Casablanca</p>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section><!-- end of studies section -->
+
+
+
+    <section class="section bg-light pt-5 pb-5" id="internship">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Stages</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/inter1.jpg"
+                            alt="Maintenance des ressources numériques"
+                            class="icon mb-3">
+                        <h6 class="title">Maintenance des ressources numériques 15 jours/2021</h6>
+                        <p class="subtitle">Maintenance des PC, imprimantes, écrans LCD au laboratoire national des ressources numériques à Rabat</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/inter2.jpg"
+                            alt="Maintenance des machines-outils"
+                            class="icon mb-3">
+                        <h6 class="title">Maintenance des Machines-Outils 1 mois/2022</h6>
+                        <p class="subtitle">Maintenance des installations électriques de machines-outils au lycée technique d'Oujda Mehdi Ben Berka</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <img src="assets/imgs/inter3.jpg"
+                            alt="Maintenance des pompes de distribution d'eau"
+                            class="icon mb-3">
+                        <h6 class="title">Maintenance des Pompes à Eau 1 mois + 15 jours/2023</h6>
+                        <p class="subtitle">Maintenance des circuits de distribution d'eau et leurs installations électriques à la ONEE-BO de Jerada</p>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section><!-- end of internship section -->
+
+
+
+
+    <!-- portfolio section -->
+    <section class="section pt-5 pb-5" id="portfolio">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Mes Projets</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="img-fluid" alt="Tkinter">
+                        <div class="portfolio-card-overlay">
+                            <div class="portfolio-card-caption">
+                                <h4>Projets Tkinter</h4>
+                                <p class="font-weight-normal">Théorie des graphes</p>
+                                <p class="font-weight-normal">Ordonnancement Flowshop</p>
+                                <p class="font-weight-normal">Subnetting VLSM </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="portfolio-card">
+                        <img src="assets/imgs/folio-2.jpg" class="img-fluid" alt="Raspberry Pi">
+                        <div class="portfolio-card-overlay">
+                            <div class="portfolio-card-caption">
+                                <h4>Maison Intelligente</h4>
+                                <p class="font-weight-normal">Construction d'une maison intelligente</p>
+                                <p class="font-weight-normal">en utilisant Raspberry Pi / serveur Linux</p>
+                                <p class="font-weight-normal">systèmes électriques et mécaniques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="portfolio-card">
+                        <img src="assets/imgs/folio-3.jpg" class="img-fluid" alt="Capteurs">
+                        <div class="portfolio-card-overlay">
+                            <div class="portfolio-card-caption">
+                                <h4>Système de Capteurs</h4>
+                                <p class="font-weight-normal">Construction d'un mini-projet</p>
+                                <p class="font-weight-normal">de capteurs pour l'apprentissage</p>
+                                <p class="font-weight-normal">en utilisant Arduino et Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="portfolio-card">
+                        <img src="assets/imgs/folio-4.jpg" class="img-fluid" alt="Conception Web">
+                        <div class="portfolio-card-overlay">
+                            <div class="portfolio-card-caption">
+                                <h4>Conception Web</h4>
+                                <p class="font-weight-normal">Création de sites Web</p>
+                                <p class="font-weight-normal">statiques et dynamiques</p>
+                                <p class="font-weight-normal">en utilisant html, css</p>
+                                <p class="font-weight-normal">javascript, bootstrap et mySQL</p>
+                                <p class="font-weight-normal">aussi en utilisant wordpress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+
+
+    <!-- contact section -->
+    <section class="section bg-light pt-5 pb-5" id="contact">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <!-- Your form fields here -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Votre Nom" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Entrer Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="6" class="form-control" placeholder="Écrire quelque chose" required></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="hidden" name="access_key" value="3831fd74-e8c8-4768-8898-616559e8e23f">
+                            <input type="submit" value="Envoyer le message" class="btn btn-primary rounded">
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Salah Eddine Maimouni. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtn = document.querySelector('.btn-download-cv');
+
+            downloadBtn.addEventListener('click', function() {
+                // Create an anchor element
+                const anchor = document.createElement('a');
+                anchor.href = 'assets/cv/cv.pdf'; // Set the file URL
+                anchor.download = 'cv.pdf'; // Set the downloaded file name
+                anchor.click(); // Trigger the download
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const visitWorksBtn = document.querySelector('.btn-visit-works');
+
+            visitWorksBtn.addEventListener('click', function() {
+                const githubURL = 'https://github.com/salaheddinemaimouni';
+                window.open(githubURL, '_blank'); // Open link in a new window
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const visitWorksBtn = document.querySelector('.btn-visit-linkedin');
+
+            visitWorksBtn.addEventListener('click', function() {
+                const githubURL = 'https://www.linkedin.com/in/salah-eddine-maimouni/';
+                window.open(githubURL, '_blank'); // Open link in a new window
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

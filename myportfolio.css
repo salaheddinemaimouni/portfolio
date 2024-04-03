@@ -1,0 +1,556 @@
+/* Reset styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page header styles */
+.header {
+    position: auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/imgs/header-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 270px 0;
+}
+
+
+.header-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img-holder {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-caption {
+    flex: 2;
+    text-align: left;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Service section styles */
+.section.service {
+    text-align: center;
+}
+
+.service-card {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.service-card .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+.btn, .link, .section-title, .section-subtitle {
+    color: #333;
+    text-align: center;
+}
+
+.service-card .subtitle {
+    color: #777;
+    border: 1px solid #ccc; /* Add border around the subtitle */
+    padding: 10px; /* Add padding inside the border */
+    text-align: center;
+}
+
+.service-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.study-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .study-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .study-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .study-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .study-description {
+            font-size: 16px;
+            color: #777;
+        }
+
+
+
+
+
+
+/*........*/
+.study-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.study-card:hover {
+    transform: translateY(-5px);
+}
+
+.study-img1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.study-img2 {
+    width: 210px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.study-img3 {
+    width: 250px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.study-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.study-description {
+    font-size: 16px;
+    color: #777;
+}
+
+
+
+/* Portfolio section styles */
+
+.portfolio-cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.portfolio-card {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section.portfolio-horizontal {
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.portfolio-card-img {
+    width: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.portfolio-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+    opacity: 1;
+}
+
+.portfolio-card-caption {
+    text-align: center;
+    color: #fff;
+}
+
+.portfolio-card-caption h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card-caption p {
+    font-size: 16px;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Contact section styles */
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links .link {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img-holder {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-caption {
+        text-align: center;
+    }
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-rounded {
+    border-radius: 20px;
+}
+
+/* Background */
+body {
+    background-color: #f9f9f9; /* Updated background color */
+}
+
+
+
+/* Additional Styles */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjusted overlay color */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Navigation Button Styles */
+.nav {
+    list-style-type: none;
+}
+
+.nav .item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav .link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav .link:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Active Link Styles */
+.nav .active .link {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+    display: none; /* Hide hamburger icon on larger screens */
+}
+
+@media (max-width: 767px) {
+    .nav {
+        display: none; /* Hide navigation links on smaller screens */
+    }
+
+    .hamburger {
+        display: block; /* Display hamburger icon on smaller screens */
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 999;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #2c2c2c; /* Color of hamburger lines */
+    }
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a modern font family */
+}
+
+.header-title, .header-subtitle, .section-title, .section-subtitle {
+    font-weight: 400; /* Use different font weights for hierarchy */
+}
+
+/* Box Shadows */
+.service-card, .portfolio-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle box shadows */
+}
+
+/* Hover Effects */
+.btn, .link, .portfolio-card, .service-card {
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .link:hover, .portfolio-card:hover, .service-card:hover {
+    transform: translateY(-3px); /* Add a subtle hover effect */
+}
+
+/* Whitespace and Alignment */
+.container {
+    margin-top: 20px; /* Add spacing at the top */
+}
+
+/* Consistent Color Scheme */
+.btn-primary, .link {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover, .link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Accessibility */
+/* Ensure sufficient color contrast */
+.btn, .link, .section-title, .section-subtitle {
+    color: #333;
+}

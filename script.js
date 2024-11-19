@@ -131,5 +131,5 @@ const translations = {
 
 // On page load, set the initial language to English
 document.addEventListener('DOMContentLoaded', function () {
-    switchLanguage('en');
+    switchLanguage('fr');
 });

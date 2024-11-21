@@ -40,13 +40,17 @@ const translations = {
         'study2_description': 'Higher Technician Diploma in Electrotechnics, obtained in 2022 at Mehdi Ben Berka Technical High School in Oujda',
         'study3_name': 'ENSAM CASABLANCA',
         'study3_description': 'Electromechanical Engineering Diploma started in 2022 at ENSAM Casablanca',
+        'study4_name': 'ENSAM METZ',
+        'study4_description': 'General Engineering Diploma started in 2024 at ENSAM Metz',
         'internship_title': 'Internships',
-        'internship1_title': 'Digital Resources Maintenance 15 days/2021',
+        'internship1_title': 'Digital Resources Maintenance 1 month /2021',
         'internship1_desc': 'Maintenance of PCs, printers, LCD screens at the National Laboratory of Digital Resources in Rabat',
         'internship2_title': 'Machine Tool Maintenance 1 month/2022',
         'internship2_desc': 'Maintenance of electrical installations of machine tools at Mehdi Ben Berka Technical High School in Oujda',
-        'internship3_title': 'Water Pump Maintenance 1 month + 15 days/2023',
+        'internship3_title': 'Water Pump Maintenance 2 months /2023',
         'internship3_desc': 'Maintenance of water distribution circuits and their electrical installations at ONEE-BO Jerada',
+        'internship4_title': 'Calculation and monitoring of the performance of the 350 MW thermal power plant 2 months /2024',
+        'internship4_desc': 'According to the ASME PTC 46 standard I calculated the performance of the thermal station at ONEE-BE Jerada',
         'portfolio_title': 'My Projects',
         'portfolio_project1_title': 'Tkinter Projects',
         'portfolio_project1_desc1': 'Graph theory',
@@ -81,7 +85,7 @@ const translations = {
         'linkedin_btn': 'Visitez mon LinkedIn',
         'about_me': 'À propos de moi',
         'about_description': 'Qui suis-je?',
-        'about_text': 'Je suis élève ingénieur à l'ENSAM METZ en deuxième année de PGE (programme Grande Ecole). J'ai également passé deux années d'ingénieur électromécanique à l'ENSAM CASABLANCA après avoir obtenu un DTS en électrotechnique, et je suis maintenant à la recherche d'une opportunité de stage.',
+        'about_text': "Je suis élève ingénieur à l'ENSAM METZ en deuxième année de PGE (programme Grande Ecole). J'ai également passé deux années d'ingénieur électromécanique à l'ENSAM CASABLANCA après avoir obtenu un DTS en électrotechnique, et je suis maintenant à la recherche d'une opportunité de stage.",
         'about_cv_btn': 'Télécharger CV',
         'services_title': 'Services',
         'service_electrical_title': 'Électrique',
@@ -99,13 +103,17 @@ const translations = {
         'study2_description': 'Diplôme de Technicien Supérieur en Électrotechnique, obtenu en 2022 au Lycée Technique Mehdi Ben Berka à Oujda',
         'study3_name': 'ENSAM CASABLANCA',
         'study3_description': 'Diplôme d\'Ingénieur en Électromécanique entamé en 2022 à l\'ENSAM Casablanca',
+        'study4_name': 'ENSAM METZ',
+        'study4_description': 'Diplôme d\'Ingénieur généraliste PGE (Programme Grande École) entamé en 2024 à l\'ENSAM Metz',
         'internship_title': 'Stages',
-        'internship1_title': 'Maintenance des Ressources Numériques 15 jours/2021',
+        'internship1_title': 'Maintenance des Ressources Numériques 1 mois /2021',
         'internship1_desc': 'Maintenance des PC, imprimantes, écrans LCD au Laboratoire National des Ressources Numériques à Rabat',
-        'internship2_title': 'Maintenance des Machines-Outils 1 mois/2022',
+        'internship2_title': 'Maintenance des Machines-Outils 1 mois /2022',
         'internship2_desc': 'Maintenance des installations électriques des machines-outils au Lycée Technique Mehdi Ben Berka à Oujda',
-        'internship3_title': 'Maintenance des Pompes de Distribution d\'Eau 1 mois + 15 jours/2023',
+        'internship3_title': 'Maintenance des Pompes de Distribution d\'Eau 2 mois /2024',
         'internship3_desc': 'Maintenance des circuits de distribution d\'eau et de leurs installations électriques à l\'ONEE-BO Jerada',
+        'internship4_title': 'Calcul et suivi des performances de la centrale thermique 350MW 2 mois /2024',
+        'internship4_desc': 'Selon la norme ASME PTC 46 j\'ai calculé les performances de la station thermique à l\'ONEE-BE Jerada',
         'portfolio_title': 'Mes Projets',
         'portfolio_project1_title': 'Projets Tkinter',
         'portfolio_project1_desc1': 'Théorie des graphes',
@@ -131,5 +139,6 @@ const translations = {
 
 // On page load, set the initial language to English
 document.addEventListener('DOMContentLoaded', function () {
-    switchLanguage('fr');
+    switchLanguage('en');
 });
+

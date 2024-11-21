@@ -268,8 +268,14 @@ body {
 .study-img3 {
     width: 250px;
     height: 75px;
-    object-fit: cover;
+    
     border-radius: 10px;
+}
+.study-img4 {
+    width: 180px;
+    height: 35px;
+    
+    border-radius: 4px;
 }
 .study-name {
     font-size: 24px;

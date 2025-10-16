@@ -290,67 +290,88 @@ body {
 
 
 
-/* Portfolio section styles */
+/* === Portfolio Section (nouvelle version) === */
 
-.portfolio-cards-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 60px 0;
 }
 
 .portfolio-card {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    margin: 0 10px;
+    background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.section.portfolio-horizontal {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
+    margin-bottom: 30px;
 }
 
-.portfolio-card-img {
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card img {
     width: 100%;
-    width: 200px;
     height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
 }
 
-.portfolio-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+/* Les titres et textes visibles en permanence */
+.portfolio-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding: 0 10px;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
-    opacity: 1;
+.portfolio-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    padding: 0 15px;
 }
 
+/* Enlève les anciens effets d’overlay */
+.portfolio-card-overlay,
 .portfolio-card-caption {
-    text-align: center;
-    color: #fff;
+    display: none !important;
 }
 
-.portfolio-card-caption h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Animation d’image légère au survol */
+.portfolio-card img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
 
-.portfolio-card-caption p {
-    font-size: 16px;
+/* Espacement entre les colonnes */
+#portfolio .col-md-3 {
+    padding: 10px;
 }
 
+/* Adaptation mobile */
+@media (max-width: 767px) {
+    #portfolio .col-md-3 {
+        width: 100%;
+    }
+
+    .portfolio-card img {
+        height: 180px;
+    }
+
+    .portfolio-card h4 {
+        font-size: 1rem;
+    }
+
+    .portfolio-card p {
+        font-size: 0.85rem;
+    }
+}
 
 
 /* Animations */

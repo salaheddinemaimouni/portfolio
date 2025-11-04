@@ -466,6 +466,24 @@ body {
     border-radius: 20px;
 }
 
+/* Bouton "Télécharger CV" un peu bleu par défaut */
+.btn-download-cv {
+  background: rgba(0, 123, 255, 0.12); /* léger bleu */
+  color: #007bff;                       /* texte bleu */
+  border: 1px solid #007bff;            /* contour bleu */
+}
+
+.btn-download-cv:hover,
+.btn-download-cv:focus {
+  background: #007bff;   /* plein bleu au survol */
+  color: #fff;           /* texte blanc */
+  border-color: #0069d9; /* bleu un peu plus foncé */
+  text-decoration: none; /* pas de soulignement */
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* accessibilité */
+}
+
+
 /* Background */
 body {
     background-color: #f9f9f9; /* Updated background color */
@@ -580,6 +598,36 @@ body {
 /* Ensure sufficient color contrast */
 .btn, .link, .section-title, .section-subtitle {
     color: #333;
+}
+
+
+/* -- CV buttons -- */
+.btn-download-cv {
+  background: rgba(0, 123, 255, 0.12);
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+.btn-download-cv:hover,
+.btn-download-cv:focus {
+  background: #007bff;
+  color: #fff;
+  border-color: #0069d9;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  text-decoration: none;
+}
+
+/* -- Filter buttons spacing -- */
+#portfolio [data-filter] { min-width: 90px; }
+
+/* -- Better contrast for readability -- */
+.portfolio-card p,
+.study-description,
+.section-subtitle { color: #4a4a4a; }
+
+/* -- Header badges -- */
+.badge-light {
+  font-weight: 600;
+  border: 1px solid #e7e7e7;
 }
 
 

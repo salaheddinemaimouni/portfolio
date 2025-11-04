@@ -1,437 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Salah Page d'Accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="myportfolio.css">
+  <meta charset="utf-8">
+  <title>Salah-Eddine MAIMOUNI — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <meta name="description" content="Élève-ingénieur Arts et Métiers Metz (2PG). Électrotechnique, systèmes embarqués, génie industriel, XR/Unity, MATLAB/Simulink, AnyLogic. Alternance oct. 2025, stage janv. 2026.">
+  <link rel="canonical" href="https://salaheddinemaimouni.github.io/portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Salah-Eddine MAIMOUNI — Portfolio">
+  <meta property="og:description" content="Électrotech, embarqué, indus/SCM. Projets concrets et résultats mesurés.">
+  <meta property="og:image" content="assets/imgs/header-bg.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="myportfolio.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Salah-Eddine MAIMOUNI",
+    "jobTitle":"Engineering student (2PG)",
+    "alumniOf":[
+      {"@type":"CollegeOrUniversity","name":"Arts et Métiers Metz"},
+      {"@type":"CollegeOrUniversity","name":"ENSAM Casablanca"}
+    ],
+    "knowsAbout":["Electrotechnics","Embedded systems","Industrial engineering","Supply chain","Unity XR","MATLAB Simulink","AnyLogic","CATIA"],
+    "url":"https://salaheddinemaimouni.github.io/portfolio",
+    "sameAs":[
+      "https://www.linkedin.com/in/salah-eddine-maimouni/",
+      "https://github.com/salaheddinemaimouni"
+    ]
+  }
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#home" data-lang="navbar_brand">Salah Eddine Maimouni</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home" data-lang="nav_home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" data-lang="nav_about">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service" data-lang="nav_services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#studies" data-lang="nav_studies">Études</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio" data-lang="nav_portfolio">Mes Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" data-lang="nav_contact">Contact</a>
-                    </li>
-                    <!-- Language Selector -->
-                    <li class="nav-item" style="margin-left: 10px;">
-                        <select class="custom-select" onchange="switchLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="fr">Français</option>
-                        </select>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header text-center">
-        <div class="overlay"></div>
-        <div class="container">
-            <h1 class="header-title" data-lang="header_title"></h1>
-            <p class="header-subtitle" data-lang="header_subtitle"></p>
-            <p class="header-subtitle" data-lang="header_subtitle2"></p>
-            <a href="https://github.com/salaheddinemaimouni" target="_blank" class="btn btn-primary btn-lg mt-3 btn-visit-works" data-lang="github_btn">Visit my GitHub</a>
-            <a href="https://www.linkedin.com/in/salah-eddine-maimouni/" target="_blank" class="btn btn-primary btn-lg mt-3 btn-visit-linkedin" data-lang="linkedin_btn">Visit my LinkedIn</a>
-        </div>
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-5 pb-5" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/imgs/man.jpg" class="img-fluid rounded-circle about-img"
-                        alt="Étudiant ingénieur en électromécanique">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="section-title mb-3" data-lang="about_me"></h2>
-                    <p class="section-subtitle" data-lang="about_description"></p>
-                    <p data-lang="about_text"></p>
-                    <a href="assets/cv/Salah-Eddine MAIMOUNI_CV.pdf" download class="btn btn-outline-primary mt-4 btn-download-cv" data-lang="about_cv_btn">Download CV</a>
-                </div>
-            </div>
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section -->
-    <section class="section bg-light pt-5 pb-5" id="service">
-        <div class="container">
-            <h2 class="section-title mb-5 text-center" data-lang="services_title"></h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/electric.jpg"
-                            alt="Conception, simulation, maintenance et construction de systèmes électriques et électroniques automatiques"
-                            class="icon mb-3">
-                        <h6 class="title" data-lang="service_electrical_title"></h6>
-                        <p class="subtitle" data-lang="service_electrical_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/mechanic.jpg"
-                            alt="Conception, simulation, maintenance et construction de systèmes mécaniques et modélisation 3D"
-                            class="icon mb-3">
-                        <h6 class="title" data-lang="service_mechanical_title"></h6>
-                        <p class="subtitle" data-lang="service_mechanical_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/embedded.jpg"
-                            alt="Programmation, construction et maintenance de systèmes embarqués utilisant C, C++, Python et l'assembleur"
-                            class="icon mb-3">
-                        <h6 class="title" data-lang="service_embedded_title"></h6>
-                        <p class="subtitle" data-lang="service_embedded_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/dev.jpg"
-                            alt="Interfaces utilisateur graphiques, programmation orientée objet, vision par ordinateur, web front et back-end"
-                            class="icon mb-3">
-                        <h6 class="title" data-lang="service_dev_title"></h6>
-                        <p class="subtitle" data-lang="service_dev_desc"></p>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section><!-- end of service section -->
-
-    <!-- studies section -->
-    <section class="section bg-light pt-5 pb-5" id="studies">
-        <div class="container">
-            <h2 class="section-title mb-5 text-center" data-lang="studies_title"></h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="study-card text-center">
-                        <img src="assets/imgs/STUDY4.png" alt="ingénieur Arts et metiers" class="study-img4 mb-3">
-                        <h6 class="study-name" data-lang="study4_name"></h6>
-                        <p class="study-description" data-lang="study4_description"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="study-card text-center">
-                        <img src="assets/imgs/study3.png" alt="Diplôme d'ingénieur en électromécanique à l'ENSAM Casablanca"
-                            class="study-img3 mb-3">
-                        <h6 class="study-name" data-lang="study3_name"></h6>
-                        <p class="study-description" data-lang="study3_description"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="study-card text-center">
-                        <img src="assets/imgs/study2.jpg" alt="BTS électrotechnique" class="study-img2 mb-3">
-                        <h6 class="study-name" data-lang="study2_name"></h6>
-                        <p class="study-description" data-lang="study2_description"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="study-card text-center">
-                        <img src="assets/imgs/study1.png" alt="Bac professionnel en maintenance industrielle"
-                            class="study-img1 mb-3">
-                        <h6 class="study-name" data-lang="study1_name"></h6>
-                        <p class="study-description" data-lang="study1_description"></p>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section><!-- end of studies section -->
-
-    <!-- internship section -->
-    <section class="section bg-light pt-5 pb-5" id="internship">
-        <div class="container">
-            <h2 class="section-title mb-5 text-center" data-lang="internship_title"></h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/inter1.jpg" alt="Maintenance des ressources numériques" class="icon mb-3">
-                        <h6 class="title" data-lang="internship1_title"></h6>
-                        <p class="subtitle" data-lang="internship1_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/inter2.jpg" alt="Maintenance des machines-outils" class="icon mb-3">
-                        <h6 class="title" data-lang="internship2_title"></h6>
-                        <p class="subtitle" data-lang="internship2_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/inter3.jpg" alt="Maintenance des pompes de distribution d'eau" class="icon mb-3">
-                        <h6 class="title" data-lang="internship3_title"></h6>
-                        <p class="subtitle" data-lang="internship3_desc"></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <img src="assets/imgs/inter4.jpg" alt="Calcul des performances" class="icon mb-3">
-                        <h6 class="title" data-lang="internship4_title"></h6>
-                        <p class="subtitle" data-lang="internship4_desc"></p>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section><!-- end of internship section -->
-
-
-    <!-- ==== Section Portfolio ==== -->
-    <section class="section pt-5 pb-5" id="portfolio">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-        <h2 class="section-title mb-5 text-center" data-lang="portfolio_title"></h2>
-        <div class="row">
+      <a class="navbar-brand" href="#home" data-lang="navbar_brand">Salah Eddine Maimouni</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto align-items-md-center">
+          <li class="nav-item"><a class="nav-link" href="#home" data-lang="nav_home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-lang="nav_about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#service" data-lang="nav_services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#studies" data-lang="nav_studies">Études</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio" data-lang="nav_portfolio">Mes Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-lang="nav_contact">Contact</a></li>
+          <!-- Language Selector -->
+          <li class="nav-item ml-3">
+            <select class="custom-select" id="langSelect" onchange="switchLanguage(this.value)">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home" class="header text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="header-title" data-lang="header_title"></h1>
+      <p class="header-subtitle" data-lang="header_subtitle"></p>
+      <p class="header-subtitle" data-lang="header_subtitle2"></p>
+
+      <!-- Highlights -->
+      <ul class="list-inline mt-3">
+        <li class="list-inline-item badge badge-light">Arts et Métiers (PGE)</li>
+        <li class="list-inline-item badge badge-light">ENSAM Casablanca (Électromécanique)</li>
+        <li class="list-inline-item badge badge-light">BTS Électrotechnique</li>
+      </ul>
+
+      <!-- CTAs -->
+      <div class="mt-3">
+        <a href="https://github.com/salaheddinemaimouni" target="_blank"
+           class="btn btn-primary btn-lg mt-2 btn-visit-works" data-lang="github_btn">Visit my GitHub</a>
+        <a href="https://www.linkedin.com/in/salah-eddine-maimouni/" target="_blank"
+           class="btn btn-primary btn-lg mt-2 btn-visit-linkedin" data-lang="linkedin_btn">Visit my LinkedIn</a>
+      </div>
+
+      <!-- Availability banner -->
+      <div class="alert alert-primary text-center mt-3 mb-0" role="alert" data-lang="availability_text"></div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section pt-5 pb-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img loading="lazy" src="assets/imgs/man.jpg" class="img-fluid rounded-circle about-img"
+               alt="Étudiant ingénieur, profil">
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title mb-3" data-lang="about_me"></h2>
+          <p class="section-subtitle" data-lang="about_description"></p>
+          <p data-lang="about_text"></p>
+
+          <!-- Recruiter pack -->
+          <div class="mt-3">
+            <a href="assets/cv/CV_Salah-Eddine_MAIMOUNI_FR.pdf" class="btn btn-outline-primary btn-download-cv" data-lang="about_cv_btn">Télécharger CV</a>
+            <a href="assets/cv/CV_Salah-Eddine_MAIMOUNI_EN.pdf" class="btn btn-outline-secondary ml-2" data-lang="about_cv_en_btn">Download CV (EN)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section bg-light pt-5 pb-5" id="service">
+    <div class="container">
+      <h2 class="section-title mb-5 text-center" data-lang="services_title"></h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/electric.jpg" alt="" class="icon mb-3">
+            <h6 class="title" data-lang="service_electrical_title"></h6>
+            <p class="subtitle" data-lang="service_electrical_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/mechanic.jpg" alt="" class="icon mb-3">
+            <h6 class="title" data-lang="service_mechanical_title"></h6>
+            <p class="subtitle" data-lang="service_mechanical_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/embedded.jpg" alt="" class="icon mb-3">
+            <h6 class="title" data-lang="service_embedded_title"></h6>
+            <p class="subtitle" data-lang="service_embedded_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/dev.jpg" alt="" class="icon mb-3">
+            <h6 class="title" data-lang="service_dev_title"></h6>
+            <p class="subtitle" data-lang="service_dev_desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studies -->
+  <section class="section bg-light pt-5 pb-5" id="studies">
+    <div class="container">
+      <h2 class="section-title mb-5 text-center" data-lang="studies_title"></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="study-card text-center">
+            <img loading="lazy" src="assets/imgs/STUDY4.png" alt="Arts et Métiers Metz" class="study-img4 mb-3">
+            <h6 class="study-name" data-lang="study4_name"></h6>
+            <p class="study-description" data-lang="study4_description"></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="study-card text-center">
+            <img loading="lazy" src="assets/imgs/study3.png" alt="ENSAM Casablanca" class="study-img3 mb-3">
+            <h6 class="study-name" data-lang="study3_name"></h6>
+            <p class="study-description" data-lang="study3_description"></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="study-card text-center">
+            <img loading="lazy" src="assets/imgs/study2.jpg" alt="BTS Électrotechnique" class="study-img2 mb-3">
+            <h6 class="study-name" data-lang="study2_name"></h6>
+            <p class="study-description" data-lang="study2_description"></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="study-card text-center">
+            <img loading="lazy" src="assets/imgs/study1.png" alt="Bac Pro Maintenance" class="study-img1 mb-3">
+            <h6 class="study-name" data-lang="study1_name"></h6>
+            <p class="study-description" data-lang="study1_description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="section bg-light pt-5 pb-5" id="internship">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center" data-lang="internship_title"></h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/inter1.jpg" alt="Maintenance ressources numériques" class="icon mb-3">
+            <h6 class="title" data-lang="internship1_title"></h6>
+            <p class="subtitle" data-lang="internship1_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/inter2.jpg" alt="Maintenance machines-outils" class="icon mb-3">
+            <h6 class="title" data-lang="internship2_title"></h6>
+            <p class="subtitle" data-lang="internship2_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/inter3.jpg" alt="Pompes de distribution d'eau" class="icon mb-3">
+            <h6 class="title" data-lang="internship3_title"></h6>
+            <p class="subtitle" data-lang="internship3_desc"></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card text-center">
+            <img loading="lazy" src="assets/imgs/inter4.jpg" alt="Centrale thermique 350MW" class="icon mb-3">
+            <h6 class="title" data-lang="internship4_title"></h6>
+            <p class="subtitle" data-lang="internship4_desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section pt-5 pb-5" id="portfolio">
+    <div class="container">
+      <h2 class="section-title mb-3 text-center" data-lang="portfolio_title"></h2>
+
+      <!-- Filters -->
+      <div class="text-center mb-4">
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="all" data-lang="filter_all">Tous</button>
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="electro" data-lang="filter_electro">Électro</button>
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="embedded" data-lang="filter_embedded">Embarqué</button>
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="industry" data-lang="filter_industry">Indus/SCM</button>
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="mech" data-lang="filter_mech">Mécanique</button>
+        <button class="btn btn-sm btn-outline-primary m-1" data-filter="other" data-lang="filter_other">Autres</button>
+      </div>
+
+      <div class="row">
 
         <!-- 1 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Caneco.webp" class="img-fluid rounded shadow-sm" alt="Caneco BT">
+          <div class="portfolio-card text-center" data-cat="electro">
+            <img loading="lazy" src="assets/imgs/Caneco.webp" class="img-fluid rounded shadow-sm" alt="Caneco BT">
             <h4 class="mt-3" data-lang="portfolio_project1_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project1_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project1_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Caneco BT</span>
+              <span class="badge badge-light">IEC</span>
+            </p>
+          </div>
         </div>
 
         <!-- 2 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/MATLAB.jpg" class="img-fluid rounded shadow-sm" alt="MATLAB Simulink Simscape">
+          <div class="portfolio-card text-center" data-cat="electro">
+            <img loading="lazy" src="assets/imgs/MATLAB.jpg" class="img-fluid rounded shadow-sm" alt="MATLAB/Simulink/Simscape">
             <h4 class="mt-3" data-lang="portfolio_project2_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project2_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project2_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">MATLAB</span>
+              <span class="badge badge-light">Simulink</span>
+              <span class="badge badge-light">Simscape</span>
+            </p>
+          </div>
         </div>
 
         <!-- 3 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/TIA.jpg" class="img-fluid rounded shadow-sm" alt="TIA Portal API Siemens">
+          <div class="portfolio-card text-center" data-cat="electro,embedded">
+            <img loading="lazy" src="assets/imgs/TIA.jpg" class="img-fluid rounded shadow-sm" alt="TIA Portal PLC HMI">
             <h4 class="mt-3" data-lang="portfolio_project3_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project3_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project3_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Siemens</span>
+              <span class="badge badge-light">TIA Portal</span>
+              <span class="badge badge-light">HMI</span>
+            </p>
+          </div>
         </div>
 
         <!-- 4 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Capt.png" class="img-fluid rounded shadow-sm" alt="Maquette capteur ESP32">
+          <div class="portfolio-card text-center" data-cat="embedded">
+            <img loading="lazy" src="assets/imgs/Capt.png" class="img-fluid rounded shadow-sm" alt="ESP32 demo board">
             <h4 class="mt-3" data-lang="portfolio_project4_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project4_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project4_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">ESP32</span>
+              <span class="badge badge-light">Arduino</span>
+              <span class="badge badge-light">Python</span>
+            </p>
+          </div>
         </div>
 
         <!-- 5 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Shome.png" class="img-fluid rounded shadow-sm" alt="Smart Home IoT">
+          <div class="portfolio-card text-center" data-cat="electro,embedded,industry,other">
+            <img loading="lazy" src="assets/imgs/Shome.png" class="img-fluid rounded shadow-sm" alt="Smart Home IoT">
             <h4 class="mt-3" data-lang="portfolio_project5_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project5_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project5_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Raspberry Pi</span>
+              <span class="badge badge-light">MQTT</span>
+              <span class="badge badge-light">Home Assistant</span>
+            </p>
+          </div>
         </div>
 
         <!-- 6 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/FS.PNG" class="img-fluid rounded shadow-sm" alt="FlowShop Planner Python GUI">
+          <div class="portfolio-card text-center" data-cat="industry,other">
+            <img loading="lazy" src="assets/imgs/FS.PNG" class="img-fluid rounded shadow-sm" alt="FlowShop Planner">
             <h4 class="mt-3" data-lang="portfolio_project6_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project6_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project6_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Python</span>
+              <span class="badge badge-light">Tkinter</span>
+              <span class="badge badge-light">Gantt</span>
+            </p>
+          </div>
         </div>
 
         <!-- 7 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Graphes.jpg" class="img-fluid rounded shadow-sm" alt="Théorie des graphes Python GUI">
+          <div class="portfolio-card text-center" data-cat="other">
+            <img loading="lazy" src="assets/imgs/Graphes.jpg" class="img-fluid rounded shadow-sm" alt="Graph Theory GUI">
             <h4 class="mt-3" data-lang="portfolio_project7_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project7_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project7_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Python</span>
+              <span class="badge badge-light">Algorithms</span>
+            </p>
+          </div>
         </div>
 
         <!-- 8 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/MRP.PNG" class="img-fluid rounded shadow-sm" alt="MRP2 Microsoft Access">
+          <div class="portfolio-card text-center" data-cat="industry">
+            <img loading="lazy" src="assets/imgs/MRP.PNG" class="img-fluid rounded shadow-sm" alt="MRP2 Access">
             <h4 class="mt-3" data-lang="portfolio_project8_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project8_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project8_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Access</span>
+              <span class="badge badge-light">SQL</span>
+              <span class="badge badge-light">Forms</span>
+            </p>
+          </div>
         </div>
 
         <!-- 9 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Anylog.webp" class="img-fluid rounded shadow-sm" alt="AnyLogic Factory">
+          <div class="portfolio-card text-center" data-cat="industry">
+            <img loading="lazy" src="assets/imgs/Anylog.webp" class="img-fluid rounded shadow-sm" alt="AnyLogic factory optimization">
             <h4 class="mt-3" data-lang="portfolio_project9_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project9_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project9_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">AnyLogic</span>
+              <span class="badge badge-light">Agent-based</span>
+              <span class="badge badge-light">KPIs</span>
+            </p>
+          </div>
         </div>
 
         <!-- 10 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Statatapulte.gif" class="img-fluid rounded shadow-sm" alt="Catapulte Excel VBA">
+          <div class="portfolio-card text-center" data-cat="industry,other">
+            <img loading="lazy" src="assets/imgs/Statatapulte.gif" class="img-fluid rounded shadow-sm" alt="Excel VBA optimization">
             <h4 class="mt-3" data-lang="portfolio_project10_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project10_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project10_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Excel</span>
+              <span class="badge badge-light">VBA</span>
+              <span class="badge badge-light">GA</span>
+            </p>
+          </div>
         </div>
 
         <!-- 11 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/AMC.PNG" class="img-fluid rounded shadow-sm" alt="Amélioration continue">
+          <div class="portfolio-card text-center" data-cat="industry">
+            <img loading="lazy" src="assets/imgs/AMC.PNG" class="img-fluid rounded shadow-sm" alt="Lean improvement">
             <h4 class="mt-3" data-lang="portfolio_project11_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project11_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project11_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">VSM</span>
+              <span class="badge badge-light">5S</span>
+              <span class="badge badge-light">SMED</span>
+            </p>
+          </div>
         </div>
 
         <!-- 12 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/Soudage.PNG" class="img-fluid rounded shadow-sm" alt="Conformité mécano-soudé">
+          <div class="portfolio-card text-center" data-cat="industry,mech">
+            <img loading="lazy" src="assets/imgs/Soudage.PNG" class="img-fluid rounded shadow-sm" alt="Welded parts quality">
             <h4 class="mt-3" data-lang="portfolio_project12_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project12_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project12_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">QRQC</span>
+              <span class="badge badge-light">CAPA</span>
+            </p>
+          </div>
         </div>
 
         <!-- 13 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/FI.PNG" class="img-fluid rounded shadow-sm" alt="Formage incrémental Catia V5 RobotStudio">
+          <div class="portfolio-card text-center" data-cat="mech,other">
+            <img loading="lazy" src="assets/imgs/FI.PNG" class="img-fluid rounded shadow-sm" alt="SPIF trajectory CATIA RobotStudio">
             <h4 class="mt-3" data-lang="portfolio_project13_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project13_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project13_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">CATIA</span>
+              <span class="badge badge-light">RobotStudio</span>
+            </p>
+          </div>
         </div>
 
         <!-- 14 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/V4.PNG" class="img-fluid rounded shadow-sm" alt="V4 90° 3DEXPERIENCE">
+          <div class="portfolio-card text-center" data-cat="mech">
+            <img loading="lazy" src="assets/imgs/V4.PNG" class="img-fluid rounded shadow-sm" alt="V4 90° engine model">
             <h4 class="mt-3" data-lang="portfolio_project14_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project14_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project14_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">3DEXPERIENCE</span>
+              <span class="badge badge-light">Dynamics</span>
+            </p>
+          </div>
         </div>
 
         <!-- 15 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/fao.PNG" class="img-fluid rounded shadow-sm" alt="Assemblages vissés CATIA V5">
+          <div class="portfolio-card text-center" data-cat="mech">
+            <img loading="lazy" src="assets/imgs/ASV.PNG" class="img-fluid rounded shadow-sm" alt="Bolted assemblies CATIA">
             <h4 class="mt-3" data-lang="portfolio_project15_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project15_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project15_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">CAM</span>
+              <span class="badge badge-light">CNC</span>
+            </p>
+          </div>
         </div>
 
         <!-- 16 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/ASV.PNG" class="img-fluid rounded shadow-sm" alt="Usinage CATIA V5">
+          <div class="portfolio-card text-center" data-cat="mech">
+            <img loading="lazy" src="assets/imgs/fao.PNG" class="img-fluid rounded shadow-sm" alt="Milling CAM CATIA">
             <h4 class="mt-3" data-lang="portfolio_project16_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project16_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project16_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">CATIA</span>
+              <span class="badge badge-light">FAO</span>
+            </p>
+          </div>
         </div>
 
         <!-- 17 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/XR.PNG" class="img-fluid rounded shadow-sm" alt="XR Showroom Meta Quest 3">
+          <div class="portfolio-card text-center" data-cat="other">
+            <img loading="lazy" src="assets/imgs/XR.PNG" class="img-fluid rounded shadow-sm" alt="XR showroom Quest 3">
             <h4 class="mt-3" data-lang="portfolio_project17_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project17_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project17_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Unity</span>
+              <span class="badge badge-light">Blender</span>
+              <span class="badge badge-light">XR</span>
+            </p>
+          </div>
         </div>
 
         <!-- 18 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/ACV.png" class="img-fluid rounded shadow-sm" alt="SimaPro UNIROSS">
+          <div class="portfolio-card text-center" data-cat="industry,other">
+            <img loading="lazy" src="assets/imgs/ACV.png" class="img-fluid rounded shadow-sm" alt="SimaPro UNIROSS LCA">
             <h4 class="mt-3" data-lang="portfolio_project18_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project18_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project18_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">SimaPro</span>
+              <span class="badge badge-light">LCA</span>
+            </p>
+          </div>
         </div>
 
         <!-- 19 -->
         <div class="col-md-3 mb-4">
-            <div class="portfolio-card text-center">
-            <img src="assets/imgs/sh.PNG" class="img-fluid rounded shadow-sm" alt="Automation Studio">
+          <div class="portfolio-card text-center" data-cat="mech,industry">
+            <img loading="lazy" src="assets/imgs/sh.PNG" class="img-fluid rounded shadow-sm" alt="Hydraulic conveyor">
             <h4 class="mt-3" data-lang="portfolio_project19_title"></h4>
             <p class="text-muted small" data-lang="portfolio_project19_desc"></p>
-            </div>
+            <p class="text-success small font-weight-bold" data-lang="portfolio_project19_impact"></p>
+            <p class="mb-2">
+              <span class="badge badge-light">Automation Studio</span>
+              <span class="badge badge-light">Hydraulics</span>
+            </p>
+          </div>
         </div>
 
-        </div>
+      </div>
     </div>
-    </section>
+  </section>
 
-
-
-
-
-
-    <!-- contact section -->
-    <section class="section bg-light pt-5 pb-5" id="contact">
-        <div class="container">
-            <h2 class="section-title mb-5 text-center" data-lang="contact_title"></h2>
-            <div class="row">
-                <div class="col-md-8 m-auto">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                        <!-- Your form fields here -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Votre Nom" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Entrer Email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="message" rows="6" class="form-control"
-                                placeholder="Écrire quelque chose" required></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <input type="hidden" name="access_key" value="3831fd74-e8c8-4768-8898-616559e8e23f">
-                            <input type="submit" value="Envoyer le message" class="btn btn-primary rounded">
-                        </div>
-                    </form>
-                </div>
+  <!-- Contact -->
+  <section class="section bg-light pt-5 pb-5" id="contact">
+    <div class="container">
+      <h2 class="section-title mb-5 text-center" data-lang="contact_title"></h2>
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Votre Nom" name="name" required>
             </div>
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <footer class="footer bg-dark text-white text-center py-3">
-        <div class="container">
-            <p> Salah Eddine Maimouni. </p>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Entrer Email" name="email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" rows="6" class="form-control"
+                        placeholder="Écrire quelque chose" required></textarea>
+            </div>
+            <div class="form-group text-center">
+              <input type="hidden" name="access_key" value="3831fd74-e8c8-4768-8898-616559e8e23f">
+              <input type="submit" value="Envoyer le message" class="btn btn-primary rounded">
+              <a class="btn btn-outline-primary ml-2"
+                 href="mailto:salah-eddine.maimouni@ensam.eu?subject=Candidature%20-%20Entretien&body=Bonjour%20Salah-Eddine,%0A"
+                 data-lang="contact_mailto_btn">Me contacter</a>
+            </div>
+          </form>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-lang="navbar_brand">Salah Eddine Maimouni</span></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
+
 
 
 
